@@ -120,33 +120,42 @@ export default function Header() {
           </p>
         </div>
         <div className="flex gap-4 items-center">
-          <div>
+        {open ? null : <div>
             <div className="sm:flex group flex-col items-center justify-center relative top-1.5 hidden border-transparent rounded-full h-[44px] w-[48px] border hover:border-black">
               <div className="w-8 h-8 relative after:bg-[-198px_-76px] after:bg-[length:1450px_110px] after:block after:bg-[url('/icons/all-icon.svg')] after:w-8 after:h-8"></div>
               <div className="w-[18px] h-[10px] relative after:bg-[-76px_1px] group-hover:hidden after:bg-[length:1450px_110px] after:block after:bg-[url('/icons/all-icon.svg')] after:w-8 after:h-8"></div>
             </div>
-          </div>
-          <Image
+          </div>}
+          {open ? <div className={`after:block  ${open ? "block" : "hidden"} -ml-2 hidden sm:inline-block after:bg-[-1200px_-38px] after:w-[27px] after:h-[27px] after:bg-[url('/icons/all-icon.svg')] after:bg-[length:1450px_110px]`}></div> : null}
+
+          {open ? null : <div className={`after:block ${open ? "hidden" : "block"} -ml-2 hidden sm:inline-block after:bg-[-1165px_-38px] after:w-[27px] after:h-[27px] after:bg-[url('/icons/all-icon.svg')] after:bg-[length:1450px_110px]`}></div>}
+          {/* <Image
             src={"/icons/search.svg"}
             className="hidden sm:inline-block"
             alt=""
             width={28}
             height={28}
-          />
-          <div onClick={handleOpen} className={`after:block ${open ? "block": 'hidden'} after:bg-[-1135px_-38px] after:bg-[url('/icons/all-icon.svg')] after:w-6 after:h-[25px] after:bg-[length:1450px_110px]`}>
-          </div>
+          /> */}
+          <div
+            onClick={handleOpen}
+            className={`after:block ${
+              open ? "block" : "hidden"
+            } after:bg-[-1135px_-38px] after:bg-[url('/icons/all-icon.svg')] after:w-6 after:h-[25px] after:bg-[length:1450px_110px]`}
+          ></div>
           <Image
             src={"/icons/menu.svg"}
             onClick={handleOpen}
             alt=""
             width={36}
             height={36}
-            className={`${open ? "hidden": "block"}`}
+            className={`${open ? "hidden" : "block"}`}
           />
         </div>
       </div>
       <div
-        className={`absolute ${scrolled ? '-bottom-[84vh]' :'-bottom-[78vh]'} pb-10 right-0 left-0 ${
+        className={`absolute ${
+          scrolled ? "-bottom-[84vh]" : "-bottom-[78vh]"
+        } pb-10 right-0 left-0 ${
           open ? (scrolled ? "h-[84vh]" : "h-[78vh]") : "h-0 overflow-hidden"
         } z-40 bg-[#303A3D]`}
       >
@@ -156,8 +165,14 @@ export default function Header() {
             <div className="flex-1 max-h-[440px] flex flex-col overflow-scroll">
               {data.map((el, i) => {
                 return (
-                  <Link key={i} className="flex items-center justify-between py-[19px] px-[7px] border-b group hover:bg-[#00BCFF] transition-colors duration-300 border-b-white" href={el.href}>
-                    <span className="text-white text-xl group-hover:text-[#333]">{el.text}</span>
+                  <Link
+                    key={i}
+                    className="flex items-center justify-between py-[19px] px-[7px] border-b group hover:bg-[#00BCFF] transition-colors duration-300 border-b-white"
+                    href={el.href}
+                  >
+                    <span className="text-white text-xl group-hover:text-[#333]">
+                      {el.text}
+                    </span>
                     <div className="after:block after:bg-[length:1450px_110px] after:bg-[url('/icons/all-icon.svg')] after:bg-[-225px_0px] after:w-2 after:h-[14px] bg-opacity-50"></div>
                   </Link>
                 );
