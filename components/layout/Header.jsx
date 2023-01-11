@@ -156,7 +156,7 @@ export default function Header() {
         className={`absolute ${
           scrolled ? "-bottom-[84vh]" : "-bottom-[78vh]"
         } pb-10 right-0 left-0 ${
-          open ? (scrolled ? "h-[84vh]" : "h-[78vh]") : "h-0 overflow-hidden"
+          open ? (scrolled ? "h-[84vh]" : "h-[78vh]") : "hidden overflow-hidden"
         } z-40 bg-[#303A3D]`}
       >
         <div className="max-w-[750px] lg:max-w-[960px] mx-auto">
