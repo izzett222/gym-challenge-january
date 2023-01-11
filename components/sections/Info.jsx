@@ -82,8 +82,8 @@ export default function Info() {
             {
                 data.map((el, i) => {
                     return <div key={i}>
-                        <div className="flex gap-3 items-center text-white ">
-                        <div className="min-w-[60px] h-[60px] lg:min-w-[130px] justify-center items-center flex lg:h-[130px] border-2 border-white bg-transpent rounded-full">
+                        <div className="flex gap-3 items-center text-white group hover:cursor-pointer">
+                        <div className="min-w-[60px] h-[60px] lg:min-w-[130px] group-hover:bg-white justify-center items-center flex lg:h-[130px] border-2 border-white bg-transpent rounded-full">
                             <Image src={"/icons/white-right-arrow.svg"} alt="" width={24} height={36} />
                         </div>
                             

@@ -53,7 +53,7 @@ export default function Programs() {
               className="px-3 mb-3 py-[14px]"
               placeholder="Suchen Sie nach Begriffen aus dem Uni-Glossar"
             />
-            <button className="bg-[#004191] text-white w-fit py-4 px-[35px]">
+            <button className="bg-[#004191] hover:bg-[#333333] text-white w-fit py-4 px-[35px]">
               begriff suchen
             </button>
           </div>
@@ -95,7 +95,7 @@ export default function Programs() {
           })}
         </div>
         <div className="flex justify-center mt-16">
-          <button className="bg-[#004191] text-white w-fit py-4 px-[35px]">
+          <button className="bg-[#004191] hover:bg-[#333333] text-white w-fit py-4 px-[35px]">
             Study programs&apos; webpages for students
           </button>
         </div>

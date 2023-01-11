@@ -67,13 +67,13 @@ export default function News() {
       <div className="mx-auto max-w-[750px] lg:max-w-[960px] pt-10">
         <h2 className="text-white">News and events for students</h2>
         <div className="grid grid-rows-6- mt-5 mb-10  sm:grid-cols-2 md:grid-cols-3 gap-x-[30px] gap-y-[30px]- justify-center ">
-          <div className={`flex flex-col mb-[30px]`}>
-            <div className="py-[30px] px-5 bg-white">
+          <div className={`flex flex-col mb-[30px] group`}>
+            <div className="py-[30px] px-5 bg-white group-hover:bg-[#00BEFF]">
               <h3>Newsticker: Information on the coronavirus</h3>
               <p>Article | 11/10/22</p>
             </div>
           </div>
-          <div className={`flex flex-col sm:row-span-2 md:row-span-2 bg-white mb-[30px]`}>
+          <div className={`flex flex-col sm:row-span-2 md:row-span-2 bg-white mb-[30px] group hover:bg-[#00BEFF]`}>
             <div className="relative flex-1">
               <Image src="/images/news1.jpg" alt="" fill />
             </div>
@@ -85,7 +85,7 @@ export default function News() {
               <p>Video | YouTube</p>
             </div>
           </div>
-          <div className={`flex flex-col row-span-2 bg-white mb-[30px]`}>
+          <div className={`flex flex-col row-span-2 bg-white mb-[30px] group hover:bg-[#00BEFF]`}>
             <div className="relative aspect-[7/5]">
               <Image src="/images/news2.jpg" alt="" fill />
             </div>
@@ -97,13 +97,13 @@ export default function News() {
               <p>USUS blog | 11/10/22</p>
             </div>
           </div>
-          <div className={`hidden sm:flex flex-col bg-white mb-[30px] lg:-mt-[60px] h-fit`}>
+          <div className={`hidden sm:flex flex-col bg-white mb-[30px] group hover:bg-[#00BEFF] lg:-mt-[60px] h-fit`}>
             <div className="py-[30px] px-5 h-fit">
               <h3>Impressive research in the field of business administration</h3>
               <p>News | 11/10/22</p>
             </div>
           </div>
-          <div className={`flex flex-col row-span-2 lg:-mt-[60px] bg-white mb-[30px]`}>
+          <div className={`flex flex-col row-span-2 lg:-mt-[60px] bg-white mb-[30px] hover:bg-[#00BEFF] group`}>
             <div className="relative aspect-[7/5]">
               <Image src="/images/news3.jpg" alt="" fill />
             </div>
@@ -114,7 +114,7 @@ export default function News() {
               <p>Article | 11/10/22</p>
             </div>
           </div>
-          <div className={`hidden sm:flex flex-col row-span-2 bg-white mb-[30px]`}>
+          <div className={`hidden sm:flex flex-col row-span-2 bg-white mb-[30px] hover:bg-[#00BEFF] group`}>
             <div className="relative aspect-[7/5]">
               <Image src="/images/news4.jpg" alt="" fill />
             </div>
@@ -125,7 +125,7 @@ export default function News() {
               <p>Article | 11/10/22</p>
             </div>
           </div>
-          <div className={`hidden sm:flex flex-col row-span-2 bg-white mb-[30px]`}>
+          <div className={`hidden sm:flex flex-col row-span-2 bg-white mb-[30px] hover:bg-[#00BEFF] group`}>
             <div className="relative aspect-[7/5]">
               <Image src="/images/news5.jpg" alt="" fill />
             </div>
@@ -136,7 +136,7 @@ export default function News() {
               <p>News | 11/10/22</p>
             </div>
           </div>
-          <div className={`hidden sm:flex flex-col row-span-2 bg-white mb-[30px]`}>
+          <div className={`hidden sm:flex flex-col row-span-2 bg-white mb-[30px] hover:bg-[#00BEFF] group`}>
             <div className="relative aspect-[7/5]">
               <Image src="/images/news5.jpg" alt="" fill />
             </div>
@@ -147,7 +147,7 @@ export default function News() {
               <p>News | 11/10/22</p>
             </div>
           </div>
-          <div className={`hidden sm:flex flex-col bg-white mb-[30px]`}>
+          <div className={`hidden sm:flex flex-col bg-white mb-[30px] hover:bg-[#00BEFF] group`}>
             <div className="py-[30px] px-5">
               <h3>General questions: Limited office hours December 22, 2022 - January 6, 2023</h3>
               <p>News | 11/10/22</p>
@@ -160,7 +160,7 @@ export default function News() {
           return (
             <button
               key={i}
-              className="border-white border-2 font-medium uppercase bg-transparent px-[35px] py-4 text-white"
+              className="border-white hover:cursor-pointer border-2 font-medium uppercase bg-transparent px-[35px] py-4 text-white"
             >
               <span className="font-medium uppercase">{el}</span>
             </button>

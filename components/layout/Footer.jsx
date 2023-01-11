@@ -84,7 +84,7 @@ export default function Footer() {
                     return (
                       <Link
                         href={"/"}
-                        className="text-white underline font-light "
+                        className="text-white underline font-light hover:no-underline"
                         key={i}
                       >
                         {link}

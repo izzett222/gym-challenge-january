@@ -12,8 +12,8 @@ export default function Hero() {
             studies.
           </p>
         </div>
-        <div className="bg-[#333] self-end w-[190px] h-[190px] lg:w-[270px] lg:h-[270px] rounded-[50%] flex-col hidden md:flex justify-center items-center relative lg:-bottom-[60px]">
-          <p className="uppercase text-xs text-center lg:text-left lg:text-sm max-w-[130px] lg:max-w-[200px] text-white">
+        <div className="bg-[#333] group self-end w-[190px] h-[190px] lg:w-[270px] hover:bg-white lg:h-[270px] rounded-[50%] flex-col hidden md:flex justify-center items-center relative lg:-bottom-[60px]">
+          <p className="uppercase text-xs text-center lg:text-left lg:text-sm max-w-[130px] lg:max-w-[200px] text-white group-hover:text-[#333]">
             INFORMATION FOR PROSPECTIVE STUDENTS
           </p>
           <Image
