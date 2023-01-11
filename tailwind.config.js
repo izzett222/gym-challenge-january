@@ -11,6 +11,8 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-open)', ...fontFamily.sans],
       },
+      gridTemplateRows: {
+      }
     },
   },
   plugins: [],
