@@ -20,11 +20,11 @@ export default function Header() {
     },
     {
       text: "Study Examination",
-      href: "/",
+      href: "/study",
     },
     {
       text: "Digital Services",
-      href: "/",
+      href: "/digital",
     },
     {
       text: "Financing & Stipends",
