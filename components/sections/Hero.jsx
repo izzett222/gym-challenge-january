@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function Hero() {
+export default function Hero({scrolled}) {
   return (
-    <div className="bg-[#00BEFF] px-[15px]">
+    <div className={`bg-[#00BEFF] px-[15px] ${scrolled ? 'mt-[93px]' : 'mt-[180px]'}`}>
       <div className="max-w-[750px] lg:max-w-[960px] md:h-[320px] mx-auto flex flex-col md:flex-row gap-5 py-10">
         <div className="flex-1 flex flex-col justify-center">
           <h1 className="mb-3">Students</h1>
